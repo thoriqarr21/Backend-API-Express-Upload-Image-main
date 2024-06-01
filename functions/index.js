@@ -11,5 +11,5 @@ app.use(cors());
 app.use(express.json());
 app.use(FileUpload());
 app.use(express.static("public"));
-app.use('.netlify/src/index',ProductRoute);
+app.use('.netlify/function/index',ProductRoute);
 app.listen(5030, ()=> console.log('Server Up and Running...'));
